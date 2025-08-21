@@ -1,0 +1,56 @@
+{
+  "enabled": {
+    "description": "启用插件",
+    "type": "bool",
+    "default": true,
+    "hint": "是否启用小玩具控制插件"
+  },
+  "trigger_keywords": {
+    "description": "触发关键词",
+    "type": "list",
+    "default": ["我要控制你了", "我真的要控制你了", "td", "控制", "启动玩具", "遥控"],
+    "hint": "当用户发送包含这些关键词的消息时，将触发控制模式。每行一个关键词"
+  },
+  "interactive_item_name": {
+    "description": "小玩具名称",
+    "type": "string",
+    "default": "特殊装置",
+    "hint": "在提示词中显示的小玩具设备名称，可以自定义为任何你想要的名称"
+  },
+  "state_duration_seconds": {
+    "description": "控制持续时间（秒）",
+    "type": "int",
+    "default": 180,
+    "hint": "每次控制状态持续的时间，单位为秒。默认3分钟(180秒)"
+  },
+  "cooldown_seconds": {
+    "description": "冷却时间（秒）",
+    "type": "int",
+    "default": 30,
+    "hint": "同一用户连续触发控制的冷却时间，单位为秒。防止频繁触发"
+  },
+  "sensitivity_level": {
+    "description": "敏感度等级（0-100）",
+    "type": "int",
+    "default": 50,
+    "hint": "控制AI反应的敏感度等级，数值越高反应越强烈。范围：0-100"
+  },
+  "max_concurrent_states": {
+    "description": "最大并发控制数",
+    "type": "int",
+    "default": 10,
+    "hint": "系统同时允许的最大控制会话数，防止资源过度占用"
+  },
+  "admin_only_mode": {
+    "description": "仅管理员可用",
+    "type": "bool",
+    "default": false,
+    "hint": "如果启用，只有管理员可以触发控制功能"
+  },
+  "log_interactions": {
+    "description": "记录互动日志",
+    "type": "bool",
+    "default": true,
+    "hint": "是否在日志中记录控制相关的互动信息"
+  }
+}
