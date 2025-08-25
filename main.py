@@ -28,7 +28,7 @@ from astrbot.core.utils.astrbot_path import get_astrbot_data_path
 
 
 class ConfigurationManager:
-    """配置管理器 - 负责管理所有的"调教"参数和小玩具设置"""
+    """配置管理器 - 负责管理所有"调教"参数和小玩具设置"""
 
     def __init__(self, config_dir: str):
         self.config_dir = Path(config_dir)
