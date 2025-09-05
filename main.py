@@ -46,7 +46,7 @@ class ConfigurationManager:
                 "启动玩具",
                 "遥控",
             ],
-            "interactive_item_name": "特殊装置",  # 给小玩具起个名字
+            "interactive_item_name": "特殊装置",  # 给小玩具起1个名字
             "state_duration_seconds": 180,  # 3分钟的"控制时间"
             "sensitivity_level": 50,  # 敏感度等级 0-100（数字越大反应越激烈）
             "max_concurrent_states": 10,  # 最多能同时"控制"几个AI
